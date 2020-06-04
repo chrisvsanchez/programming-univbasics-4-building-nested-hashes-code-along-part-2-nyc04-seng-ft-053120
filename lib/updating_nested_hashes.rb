@@ -1,3 +1,4 @@
+require'pry'
 def update_status
    epic_tragedy = {
       :montague => {
@@ -22,12 +23,12 @@ def update_status
 
   # Write code that changes the status of both Romeo and Juliet from "alive" to "dead"
   # Code your solution here:
-
-
-
-
+  epic_tragedy[:montague][:hero][:status] = "dead"
+  epic_tragedy[:capulets][:heroine][:status] = "dead"
   # After your code, the following code will return the altered hash. This method must only return the modified epic_tragedy hash
   epic_tragedy
+  
+  
 end
 
 def add_characters
